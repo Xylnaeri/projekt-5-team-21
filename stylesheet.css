@@ -1,0 +1,22 @@
+/*ARQUITECTA FONT*/
+@import url('https://fonts.cdnfonts.com/css/arquitecta');
+{
+    font-family: 'Arquitecta', sans-serif;
+    color: #383838;
+}
+/*Miller FONT*/
+@import url("https://use.typekit.net/clf7fdh.css");
+/*NORMAL*/
+{
+    font-family: "miller-headline", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*BOLD*/
+{
+    font-family: "miller-headline", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+       
+                
