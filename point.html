@@ -1,13 +1,108 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEYE Kundeklub | Bliv en del af Klub NEYE og faa fordele</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="/js/JsBarcode.all.min.js"></script>
 </head>
-<body>
-    
+
+<body class="profile-body">
+    <nav>
+        <ul class="nav">
+            <li class="nav_link">
+                <a href="forside.html" class="nav_link2">
+                    <i class="material-symbols-outlined">home</i>
+                </a>
+            </li>
+            <li class="nav_link nav_link-active">
+                <a href="#" class="nav_link2">
+                    <i class="material-symbols-outlined">favorite</i>
+                </a>
+            </li>
+            <li class="nav_link ">
+                <a href="profil.html" class="nav_link2 nav_link-active">
+                    <i class="material-symbols-outlined">person</i>
+                </a>
+            </li>
+            <li class="nav_link">
+                <a href="#" class="nav_link2">
+                    <i class="material-symbols-outlined">shopping_bag</i>
+                </a>
+            </li>
+            <li class="nav_link" id="menu_icon">
+                <a href="#" class="nav_link2">
+                    <i class="material-symbols-outlined">menu</i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header class="pointheader">
+        <img class="pointheader" src="img/pointheader.jpg" alt="Imagebanner dame der holder en trendy taske">
+        <div class="pointheader-text">
+            <h1 class="point-h1">Mine point</h1>
+            <h2 class="point-h2">500</h2>
+            <p class="point-p">Point</p>
+        </div>
+        <a href="">
+            <div class="icon-back top-left">
+                <i class="material-symbols-outlined">arrow_back_ios_new</i>
+            </div>
+        </a>
+    </header>
+    <main>
+        <div class="point-bar">
+            <p class="point-bar-top">Optjen 250 point mere og få endnu en fordel!</p>
+            <div class="bar">
+                <div id="html-bar"></div>
+            </div>
+            <p class="point-bar-bottom">750 point</p>
+        </div>
+        <div class="point-harmonika"></div>
+        <div class="point-aktivitet">
+            <p class="point-aktivitet-p">Pointaktivitet</p>
+            <div class="point-box">
+                <div class="point-info">
+                    <p>10. januar 2023</p>
+                    <p class="point-info-place">NEYE Rosengaardcenteret</p>
+                </div>
+                <div class="point-walue">
+                    <p>+ 150 point</p>
+                </div>
+            </div>
+            <div class="point-box">
+                <div class="point-info">
+                    <p>22. december 2022</p>
+                    <p class="point-info-place">NEYE Rosengaardcenteret</p>
+                </div>
+                <div class="point-walue">
+                    <p>+ 300 point</p>
+                </div>
+            </div>
+            <div class="point-box">
+                <div class="point-info">
+                    <p>17. marts 2022</p>
+                    <p class="point-info-place">NEYE Rosengaardcenteret</p>
+                </div>
+                <div class="point-walue">
+                    <p>- 200 point</p>
+                </div>
+            </div>
+            <div class="point-box">
+                <div class="point-info">
+                    <p>20. december 2021</p>
+                    <p class="point-info-place">NEYE Vestergade</p>
+                </div>
+                <div class="point-walue">
+                    <p>+ 250 point</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>

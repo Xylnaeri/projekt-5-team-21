@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEYE Kundeklub | Bliv en del af Klub NEYE og faa fordele</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="/js/index.js"></script>
 </head>
-<body>
-    
+
+<body class="index-body">
+    <header class="profileheader">
+        <a href="">
+            <div class="icon-back top-left">
+                <i class="material-symbols-outlined">arrow_back_ios_new</i>
+            </div>
+        </a>
+    </header>
+    <main>
+        <div class="contactmain">
+            <div class="wrapper" id="contactwrapper">
+                <form class="form">
+                    <h1 class="h1contact">Velkommen til dit</h1>
+                    <h1 class="h1contact1">Klub NEYE</h1>
+                    <h2 class="h2contact">Indtast dine login oplysninger for at fortsætte.</h2>
+                    <input type="text" class="email formEntry" placeholder="email" />
+                    <input type="text" class="password formEntry" placeholder="password" />
+                    <div class="index-buttons">
+                        <button class="index-buttons1 formEntry" onclick="submitForm(event)">log ind</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
