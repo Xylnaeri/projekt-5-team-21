@@ -7,15 +7,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }  
+}
+
 body {
     margin: 0 auto;
-}  
+}
+
 /*BOTTOM NAVIGATION*/
 .nav_link2 {
     text-decoration: none;
-    color: #383838;;
-}     
+    color: #383838;
+    ;
+}
+
 .nav {
     position: fixed;
     bottom: 0;
@@ -25,7 +29,8 @@ body {
     background-color: #ffffff;
     display: flex;
     overflow-x: auto;
-}           
+}
+
 .nav_link {
     display: flex;
     flex-direction: column;
@@ -33,21 +38,25 @@ body {
     justify-content: center;
     flex-grow: 1;
     overflow: hidden;
-    white-space: nowrap;    
+    white-space: nowrap;
     color: #383838;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     transition: background-color 0.1s ease-in-out;
 }
+
 .nav_link2:hover {
     color: #9BBEBD;
 }
+
 .nav_link-active {
     color: #9BBEBD;
 }
+
 .nav-menu li {
     list-style: none;
 }
+
 /*MENU*/
 .nav-menu a {
     font-family: 'Arquitecta', sans-serif;
@@ -57,6 +66,7 @@ body {
     text-decoration: none;
     line-height: 22px;
 }
+
 .nav-menu div {
     display: flex;
     justify-content: left;
@@ -66,102 +76,118 @@ body {
     padding-left: 20px;
     margin-bottom: 1px;
 }
+
 .nav-menu1 {
     background-color: #F6F6F6;
 }
+
 .nav-menu1:hover {
     cursor: pointer;
     background-color: #D9D9D9;
 }
+
 .nav-menu1 a {
     color: #383838;
 }
-.nav-menu2{
+
+.nav-menu2 {
     background-color: #99A1A7;
     color: white;
 }
+
 .nav-menu2:hover {
     background-color: #B6BDC3;
     cursor: pointer;
 }
+
 .nav-menu2 a {
     color: #ffffff;
     font-weight: 200;
 }
+
 /*INDEX*/
 .index-body {
     background-color: #D3DEDF;
 }
+
 .wrapper {
-	padding-top: 60px;
+    padding-top: 60px;
 }
+
 .form {
-	background: #fff;
-	box-shadow: 0 10px 40px 0 #9BBEBD;
-	border-radius: 5px;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	left: 0;
-	right: 0;
-	position: absolute;
+    background: #fff;
+    box-shadow: 0 10px 40px 0 #9BBEBD;
+    border-radius: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    position: absolute;
     border-radius: 0px;
     z-index: 1;
 }
+
 .password {
-	background-color: #ebebeb;
-	border-color: #E58EAD;
-	height: 3em;
-	width: 70%;
-	font-family: 'Arquitecta', sans-serif;
-	text-transform: uppercase;
-	font-size: 15px;
-	border-radius: 10px
+    background-color: #ebebeb;
+    border-color: #E58EAD;
+    height: 3em;
+    width: 70%;
+    font-family: 'Arquitecta', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 10px
 }
 
 .email {
-	background-color: #ebebeb;
-	height: 3em;
-	font-family: 'Arquitecta', sans-serif;
-	text-transform: uppercase;
-	font-size: 15px;
-	width: 70%;
-	border-radius: 7px
+    background-color: #ebebeb;
+    height: 3em;
+    font-family: 'Arquitecta', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 70%;
+    border-radius: 7px
 }
+
 .formEntry {
-	display: block;
-	margin: 30px auto;
-	min-width: 300px;
-	padding: 10px;
-	border-radius: 2px;
-	border: none;
-	transition: all 0.5s ease 0s;
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
 }
+
 .h1contact {
-	font-family: 'Miller headline', serif;
-	font-weight: 300;
-	text-align: center;
-	padding-top: 80px;
-	font-size: 40px;
+    font-family: 'Miller headline', serif;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
 }
+
 .h1contact1 {
-	font-family: 'Miller headline', serif;
-	font-weight: 300;
-	text-align: center;
-	font-size: 60px;
+    font-family: 'Miller headline', serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 60px;
 }
+
 .h2contact {
-	font-family: 'Arquitecta', sans-serif;
-	font-weight: 200;
-	text-align: center;
+    font-family: 'Arquitecta', sans-serif;
+    font-weight: 200;
+    text-align: center;
     padding-top: 20px;
-	font-size: 20px;
+    font-size: 20px;
 }
+
 input {
-	outline-color: #9BBEBD;
-  }
-  .index-buttons button {
+    outline-color: #9BBEBD;
+}
+
+.index-buttons button {
     height: 40px;
     border-radius: 0;
     border: none;
@@ -172,12 +198,14 @@ input {
     text-transform: uppercase;
     background-color: #99A1A7;
 }
+
 .index-buttons button:hover {
     cursor: pointer;
     border: 1px solid #383838;
     background-color: white;
     color: #383838;
 }
+
 .index-buttons1 {
     color: #99A1A7;
     display: flex;
@@ -185,17 +213,21 @@ input {
     flex-direction: column;
     width: 70%;
 }
+
 .h2contact {
     padding-bottom: 30px;
 }
+
 .index-buttons {
     padding-top: 30px;
     padding-bottom: 50px;
 }
+
 /*PROFILE*/
 .profile-body {
     background-color: #F6F6F6;
 }
+
 .profileheader {
     width: 100%;
     height: 200px;
@@ -203,9 +235,11 @@ input {
     text-align: center;
     color: white;
 }
+
 .profileheader img {
     object-fit: cover;
 }
+
 .profileheader-text {
     font-family: "miller-headline", serif;
     font-weight: 400;
@@ -216,12 +250,14 @@ input {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .barcode-profile {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
 }
+
 /*PROFILE BUTTONS*/
 .profile-buttons {
     padding-top: 90px;
@@ -229,20 +265,24 @@ input {
     justify-content: center;
     gap: 20px;
 }
+
 .top-left {
     z-index: 99;
     position: absolute;
     top: 20px;
     left: 10px;
     color: #000000;
-  }
+}
+
 .top-left:hover {
     color: #9BBEBD;
 }
+
 .icon-back {
     width: 40px;
     height: 40px;
 }
+
 .profile-buttons button {
     height: 40px;
     border-radius: 0;
@@ -254,43 +294,53 @@ input {
     text-transform: uppercase;
     background-color: #99A1A7;
 }
+
 .profile-buttons button:hover {
     cursor: pointer;
     border: 1px solid #383838;
     background-color: white;
     color: #383838;
 }
-.profile-buttons1, .profile-buttons2 {
+
+.profile-buttons1,
+.profile-buttons2 {
     color: #99A1A7;
     display: flex;
     flex-direction: column;
     width: 30%;
     gap: 20px;
 }
-.log-ud button{
+
+.log-ud button {
     background-color: rgb(0, 0, 0);
 }
+
 .log-ud button:hover {
     cursor: pointer;
     border: 1px solid #383838;
     background-color: white;
     color: #383838;
 }
+
 /*POINT*/
 .point-body {
     background-color: #F6F6F6;
 }
+
 .pointheader {
     width: 100%;
     height: 300px;
     position: relative;
     text-align: center;
     color: white;
+    overflow: hidden;
 }
+
 .pointheader img {
     object-fit: cover;
     filter: blur(6px);
 }
+
 .pointheader-text {
     font-family: "miller-headline", serif;
     font-weight: 400;
@@ -301,29 +351,34 @@ input {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .point-h1 {
     font-family: 'Miller headline', serif;
     font-weight: 400;
     font-size: 45px;
     color: #000000;
 }
+
 .point-h2 {
     font-family: 'Arquitecta', sans-serif;
     font-weight: 700;
     font-size: 100px;
     color: #e75b67;
 }
+
 .point-p {
     font-family: 'Arquitecta', sans-serif;
     font-weight: 400;
     font-size: 30px;
     color: #000000;
 }
+
 .point-bar {
     margin: 0 auto;
     padding-top: 5%;
     width: 50%;
 }
+
 .point-bar-top {
     font-family: 'Arquitecta', sans-serif;
     font-weight: 400;
@@ -331,6 +386,7 @@ input {
     font-size: 20px;
     color: #9B9B9B;
 }
+
 .point-bar-bottom {
     font-family: 'Arquitecta', sans-serif;
     font-weight: 500;
@@ -339,6 +395,99 @@ input {
     text-align: right;
     color: #383838;
 }
+
+/*POINT ACCORDION*/
+.point-accordion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.accordion {
+    background-color: #ffffff;
+    margin-top: 20px;
+    color: #444;
+    cursor: pointer;
+    padding: 25px;
+    width: 50%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: 'Arquitecta', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #383838;
+}
+
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion-arrow {
+    float: right;
+}
+
+.rotate {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotate-reverse {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    width: 50%;
+    padding: 25px;
+    display: none;
+    overflow: hidden;
+    font-family: 'Arquitecta';
+}
+.panel-title {
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+/*COPY LINK*/
+.copy-link {
+    width: 60%;
+    padding: 10px;
+    font-size: 20px;
+    color: #383838;
+    font-family: 'Arquitecta', sans-serif;
+}
+.copy-link-wrapper {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copy-link-button {
+    border: none;
+    background-color: #99A1A7;
+    color: white;
+    width: 20%;
+    height: 50px;
+    font-size: 15px;
+    font-family: 'Arquitecta', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.copy-link-button:hover {
+    background-color: #000000;
+    color: white;
+}
+.donate {
+    text-decoration: underline;
+}
+.donate:hover {
+    color: #9BBEBD;
+    cursor: pointer;
+}
 /*POINT AKTIVITET*/
 .point-aktivitet-p {
     font-family: 'Arquitecta', sans-serif;
@@ -346,11 +495,14 @@ input {
     font-size: 20px;
     color: #383838;
 }
+
 .point-aktivitet {
-    padding-top: 10%;
+    padding-top: 8%;
     margin: 0 auto;
     width: 50%;
+    padding-bottom: 10%;
 }
+
 .point-box {
     background-color: #ffffff;
     display: flex;
@@ -363,64 +515,91 @@ input {
     font-size: 20px;
     color: #383838;
 }
-.point-info p{
+
+.point-info p {
     padding: 5px;
 }
+
 .point-info-place {
     color: #9B9B9B;
 }
-.bar{
+
+.bar {
     position: relative;
     border-radius: 5px;
     background-color: #D2D2D2;
 }
-.bar div{
+
+.bar div {
     position: relative;
     width: 0;
     height: 10px;
     border-radius: 5px;
     background-color: #e75b67;
 }
-#html-bar{
+
+#html-bar {
     animation: html-fill 2s forwards;
 }
-@keyframes html-fill{
-    100%{
-        width:66%;
+
+@keyframes html-fill {
+    100% {
+        width: 66%;
+    }
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 1280px) {
+    .copy-link-wrapper{
+        flex-direction: column;
+    }
+    .copy-link-button, .copy-link {
+        width: 90%;
     }
 }
 @media only screen and (max-width: 600px) {
-    .profileheader img{
+    .profileheader img {
         display: none;
     }
+
     .profileheader {
         color: #383838;
     }
+
     .profileheader-text {
         font-size: 40px;
         padding-top: 150px;
     }
-    .profile-buttons1, .profile-buttons2 {
+
+    .profile-buttons1,
+    .profile-buttons2 {
         width: 40%;
     }
+
     .profile-buttons button {
         font-size: 18px
     }
+
     .barcode-profile {
         padding: 0 5px;
     }
+
     /*INDEX*/
     .wrapper {
         padding-top: 0;
     }
+
     .form {
         height: 100%;
         top: 0;
         z-index: 1;
     }
-    .email, .password {
+
+    .email,
+    .password {
         width: 90%;
     }
+
     /*POINT*/
     .pointheader-text {
         display: flex;
@@ -430,18 +609,25 @@ input {
         left: 120px;
         top: 170px;
     }
+
     .point-bar {
         width: 85%;
     }
+
     .point-bar-top {
         padding-top: 20%;
         font-size: 16px;
     }
+
     .point-aktivitet {
         width: 85%;
     }
+
     .point-box {
         font-size: 15px;
         padding: 10px;
     }
-  }
+    .panel, .accordion{
+        width: 85%;
+    }
+}
