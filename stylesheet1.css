@@ -51,16 +51,19 @@
 .intro-text h1{
     padding: 10px;
     font-size: 30px;
+    font-family: "miller-headline", serif;
 }
 
 .intro-text h2{
     padding: 10px;
     font-size: 50px;
+    font-family: "miller-headline", serif;
 }
 
 .intro-text p{
     padding: 10px;
     font-size: 20px;
+    font-family: 'Arquitecta', sans-serif;
 }
 
 .summer{
@@ -118,11 +121,12 @@
 .brands h1{
     font-size: 40px;
     margin-top: 15px;
+    font-family: "miller-headline", serif;
 }
 
 .brands_flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background-color: #E7EDEE;
@@ -143,9 +147,17 @@
 }
 
 .brand_model{
-    background-color: blueviolet;
     margin-right: 5%;
     margin-left: 5%;
+    max-width: 50%;
+    min-width: 80%;
+}
+
+.brand_model h2{
+    font-family: 'Arquitecta', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 20px; 
+    font-size: 20px;
 }
 
 .brand_model_img{
@@ -157,19 +169,32 @@
 
 .product_flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: blue;
-    margin-right: 5%;
-    margin-left: 5%;
+    background-color: #E7EDEE;
+    padding: 25px;
 }
   
 .product_boxes {
     background-color: orange;
-    height: 100px;
-    width: 150px;
+    width: 200px;
     margin: 10px;
+}
+
+.product_box_text {
+    background-color: #E7EDEE;
+    font-family: 'Arquitecta', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.product_box_text h1 {
+    font-size: 20px;
+}
+
+.product_box_text p {
+    font-size: 15px;
 }
 
 .product_boxes img{
@@ -178,6 +203,27 @@
     object-fit: contain;
 }
 
+.product_box_img{
+    height: 200px;
+    width: 200px;
+}
+
+.product_box_img img{
+    object-fit: cover;
+}
+
+.old_price {
+    text-decoration: line-through;
+}
+
+.new_price {
+    color: #ED6C77;
+    padding-left: 10px;
+}
+
+.prices{
+    display: flex;
+}
 .brand_model_flex {
     display: flex;
     justify-content: space-between;
