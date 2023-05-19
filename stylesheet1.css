@@ -35,8 +35,22 @@
     background-color: blue;
     display: block;
     object-fit: cover;
+    filter: blur(4px);
 }
 
+.barcode-frontpage{
+    background-color: rgba(255, 255, 255, 0.4); /* White w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
 /*main*/
 .brands{
     margin: 0 auto;
@@ -52,28 +66,68 @@
     flex-wrap: wrap;
     background-color: blue;
     margin: 5%;
-  }
+}
   
-  .brands_boxes {
+.brands_boxes {
     background-color: orange;
     height: 100px;
     width: 150px;
-
-  }
+    margin: 10px;
+}
   
-  .brands_boxes img {
+.brands_boxes img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
-  }
+}
 
-  .brand_model{
+.brand_model{
     background-color: blueviolet;
-  }
+    margin: 5%;
+}
 
-  .brand_model_img{
+.brand_model_img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-  }
+    width: 100%;
+}
+
+.product_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: blue;
+    margin: 5%;
+}
+  
+.product_boxes {
+    background-color: orange;
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+}
+
+.product_boxes img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brand_model_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: blue;
+    margin: 5%;
+}
+
+.brand_model2 {
+    background-color: orange;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}

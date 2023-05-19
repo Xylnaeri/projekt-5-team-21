@@ -7,12 +7,23 @@
     <title>NEYE Kundeklub | Bliv en del af Klub NEYE og faa fordele</title>
     <link rel="stylesheet" type="text/css" href="stylesheet1.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/JsBarcode.all.min.js"></script>
 </head>
 <body>
    <div class="search"></div> 
   <header>
     <div class="barcode">
       <img class="summer" src="img/summernight.jpg" alt="header_img_summernight">
+      <div class="barcode-frontpage">
+        <svg id="barcode"></svg>
+        <script>JsBarcode("#barcode", "123456", {
+            lineColor: "#383838",
+            background: "#F6F6F6",
+            width: 5,
+            height: 90,
+            displayValue: false
+          });</script>
+      </div>
     </div>
   </header>
 
@@ -40,13 +51,42 @@
         <img src="img/noella.png" alt="Noella">
       </div>
     </div>
+
     <div class="brands">
       <h1>Brand nyheder</h1>
     </div>
+
     <div class="brand_model">
       <img class="brand_model_img" src="img/the_bridge_img.png" alt="The Bridge model picture">
     </div>
 
+    <div class="product_flex">
+      <div class="product_boxes">
+        <img src="img/markberg_taske.PNG" alt="Markberg taske">
+      </div>
+      <div class="product_boxes">
+        <img src="img/geuss_taske.PNG" alt="Geuss taske">
+      </div>
+      <div class="product_boxes">
+        <img src="img/gigi_fratelli_taske.PNG" alt="Gigi Fratelli taske">
+      </div>
+      <div class="product_boxes">
+        <img src="img/saddler_taske.PNG" alt="Saddler taske">
+      </div>
+    </div>
+
+    <div class="brands">
+      <h1>Medlemstilbud</h1>
+    </div>
+
+    <div class="brand_model_flex">
+    <div class="brand_model2">
+      <img class="brand_model_img" src="img/noella_model.png" alt="Noella model picture">
+    </div>
+    <div class="brand_model2">
+      <img class="brand_model_img" src="img/redesigned_model.png" alt="Redesigned model picture">
+    </div>
+  </div>
   </main>
 
 </body>
