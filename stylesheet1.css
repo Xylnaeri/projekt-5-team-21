@@ -1,0 +1,64 @@
+/*ARQUITECTA FONT*/
+@import url('https://fonts.cdnfonts.com/css/arquitecta');
+{
+    font-family: 'Arquitecta', sans-serif;
+    color: #383838;
+}
+/*Miller FONT*/
+@import url("https://use.typekit.net/clf7fdh.css");
+/*NORMAL*/
+{
+    font-family: "miller-headline", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*BOLD*/
+{
+    font-family: "miller-headline", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+*{
+  box-sizing: border-box;  
+}
+/*frontpage*/
+.search{
+    
+}  
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barcode{
+    width: 100%;
+}
+
+.summer{
+    width: 100%;
+    height: 50%;
+}
+
+.brands_flex {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: blue;
+    width: 50%;
+    
+  }
+  
+  .brands_boxes {
+    flex-basis: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .brands_boxes img {
+    width: 100%;
+    height: auto;
+  }
