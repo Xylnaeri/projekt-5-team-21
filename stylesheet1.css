@@ -79,17 +79,7 @@
     }
 
 .barcode-frontpage{
-    background-color: rgba(255, 255, 255, 0.4); /* White w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 43.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 100%;
-    padding: 5px;
-    text-align: center;  
+    display: none;
     }
 
 .neye_fond{
@@ -287,6 +277,7 @@
       max-width: calc(100% - 20px);
       min-width: 280px;
     }
+    
   }
 
 @media (max-width: 768px) {
@@ -300,4 +291,20 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    @media (max-width: 480px) {
+  .barcode-frontpage {
+    display: block; /* Viser kun i mobilversionen */
+    background-color: rgba(255, 255, 255, 0.4); /* White w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 43.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    padding: 5px;
+    text-align: center;  
+  }
+}
   }
