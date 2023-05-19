@@ -6,8 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEYE Kundeklub | Bliv en del af Klub NEYE og faa fordele</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="/js/JsBarcode.all.min.js"></script>
 </head>
-<body>
-    
+<body class="profile-body">
+    <nav>
+        <ul class="nav">
+            <li class="nav_link">
+                <a href="forside.html" class="nav_link2">
+                    <i class="material-symbols-outlined">home</i>
+                </a>
+            </li>
+            <li class="nav_link nav_link-active">
+                <a href="#" class="nav_link2">
+                    <i class="material-symbols-outlined">favorite</i>
+                </a>
+            </li>
+            <li class="nav_link ">
+                <a href="profil.html" class="nav_link2 nav_link-active">
+                    <i class="material-symbols-outlined">person</i>
+                </a>
+            </li>
+            <li class="nav_link">
+                <a href="#" class="nav_link2">
+                    <i class="material-symbols-outlined">shopping_bag</i>
+                </a>
+            </li>
+            <li class="nav_link" id="menu_icon">
+                <a href="#" class="nav_link2">
+                    <i class="material-symbols-outlined">menu</i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <header class="profileheader">
+            <img class="profileheader" src="img/profileheader.jpg">
+            <div class="profileheader-text">Navn navn</div>
+        </header>
+        <div class="barcode-profile">
+            <svg id="barcode"></svg>
+            <script>JsBarcode("#barcode", "123456", {
+                lineColor: "#383838",
+                background: "#F6F6F6",
+                width: 5,
+                height: 90,
+                displayValue: false
+              });</script>
+        </div>
+        <div class="profile-buttons">
+            <div class="profile-buttons1">
+                <button>mine køb</button>
+                <button>mine point</button>
+            </div>
+            <div class="profile-buttons2">
+                <button>fordele</button>
+                <button>favoritter</button>
+            </div>
+        </div>
+        <div class="profile-buttons">
+            <div class="profile-buttons1">
+                <button>rediger konto</button>
+            </div>
+            <div class="profile-buttons2">
+                <button>kundeservice</button>
+            </div>
+        </div>
+        <div class="profile-buttons">
+            <div class="profile-buttons1 log-ud">
+                <button>log ud</button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
