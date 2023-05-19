@@ -18,7 +18,6 @@
     font-weight: 700;
     font-style: normal;
 }
-<<<<<<< Updated upstream
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +26,6 @@
 body {
     margin: 0 auto;
 }  
-
 /*BOTTOM NAVIGATION*/
 .nav_link2 {
     text-decoration: none;
@@ -105,6 +103,3 @@ body {
     color: #ffffff;
     font-weight: 200;
 }
-=======
-  
->>>>>>> Stashed changes
