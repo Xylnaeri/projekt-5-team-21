@@ -20,45 +20,60 @@
 }
   
 *{
-  box-sizing: border-box;  
+    margin: 0;
+    box-sizing: border-box;  
 }
+
 /*frontpage*/
 .search{
     
 }  
-body{
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.barcode{
-    width: 100%;
-}
 
 .summer{
     width: 100%;
-    height: 50%;
+    max-height: 500px;
+    background-color: blue;
+    display: block;
+    object-fit: cover;
+}
+
+/*main*/
+.brands{
+    margin: 0 auto;
+    background-color: brown;
+    text-align: center;
+    padding: 30px;
 }
 
 .brands_flex {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     background-color: blue;
-    width: 50%;
-    
+    margin: 5%;
   }
   
   .brands_boxes {
-    flex-basis: 150px;
-    margin-bottom: 20px;
+    background-color: orange;
+    height: 100px;
+    width: 150px;
+
   }
   
   .brands_boxes img {
     width: 100%;
     height: auto;
+    object-fit: contain;
+  }
+
+  .brand_model{
+    background-color: blueviolet;
+  }
+
+  .brand_model_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
