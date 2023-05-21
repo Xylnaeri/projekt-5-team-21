@@ -39,7 +39,7 @@
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -130,6 +130,7 @@
     height: 100px;
     width: 200px;
     margin: 15px;
+    cursor: pointer;
     }
   
 .brands_boxes img {
@@ -142,8 +143,8 @@
 
 /* brand news section start */
 .brand_model{
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
     }
 
 .brand_model h2{
@@ -159,67 +160,69 @@
     object-fit: contain;
     }
 
-    .product_flex {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: #E7EDEE;
-        padding-left: 70px;
-        padding-right: 70px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-      }
+.product_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #E7EDEE;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
       
-      .product_boxes {
-        flex-basis: calc(25% - 20px);
-        max-width: calc(25% - 20px);
-        box-sizing: border-box;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-      }
-      .product_box_img {
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+.product_boxes {
+    flex-basis: calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    }
+    
+.product_box_img {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    }
       
-      .product_box_img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+.product_box_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
       
-      .product_box_text {
-        padding: 5px;
-      }
+.product_box_text {
+    padding: 5px;
+    }
       
-      .product_box_text h1 {
-        font-size: 20px;
-        font-family: 'Arquitecta', sans-serif;
-        margin: 0;
-      }
+.product_box_text h1 {
+    font-size: 20px;
+    font-family: 'Arquitecta', sans-serif;
+    margin: 0;
+    }
       
-      .product_box_text p {
-        font-size: 15px;
-        font-family: 'Arquitecta', sans-serif;
-        margin: 0;
-      }
+.product_box_text p {
+    font-size: 15px;
+    font-family: 'Arquitecta', sans-serif;
+    margin: 0;
+    }
       
-      .prices {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
       
-      .old_price p {
-        text-decoration: line-through;
-      }
+.old_price p {
+    text-decoration: line-through;
+    }
       
-      .new_price p {
-        color: #ED6C77;
-      }
+.new_price p {
+    color: #ED6C77;
+    }
 /* brand news section end */
 
 
@@ -240,6 +243,7 @@
   .brand_model_img {
     width: 100%;
     height: auto;
+    cursor: pointer;
   }
 /* membership offer section end */
 
@@ -248,17 +252,62 @@
 .neye_fond_info {
     background-color: #E7EDEE;
     width: 100%;
-    height: 300px;
+    height: 810px;
+    text-align: center;
+    font-family: 'Arquitecta', sans-serif;
+    margin-top: 30px;
+    
     }
+
+.nf_fond_bow img {
+    height: 60px;
+    width: 100%;
+    margin-top: 30px; 
+}
+.neye_fond_info h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    }
+
+.neye_fond_footer {
+    width: 100%;
+    height: 300px;
+    background-color: #E7EDEE;
+}
+
+.neye_fond_footer img {
+    width: 60%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.nf_info {
+    font-family: 'Arquitecta', sans-serif;
+    font-size: 20px;
+    padding: 25px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+.black-button:hover {
+    background-color: white;
+    color: black;
+    border: black;
+    border-style: solid;
+    border-width: thin;
+    cursor: pointer;
+}
 /* neye-fonden section start */
 
 
-@media only screen and (min-width: 992px){
-    .brand_model {
-        max-width: 50%;
-        margin: 0 auto;
-    }
-}
 
 @media (max-width: 1024px) {
     .product_boxes {
@@ -269,16 +318,26 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-  }
-  
-  @media (max-width: 480px) {
-    .product_boxes {
-      flex-basis: calc(100% - 20px);
-      max-width: calc(100% - 20px);
-      min-width: 280px;
+    .nf_info {
+        width: 80%;
     }
-    
-  }
+    .neye_fond_footer img {
+        width: 80%;
+    }
+ 
+}
+  
+@media only screen and (min-width: 992px){
+    .brand_model {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .neye_fond_footer img {
+        width: 80%;
+    }
+
+}
+
 
 @media (max-width: 768px) {
     .brand_model2 {
@@ -291,20 +350,38 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    @media (max-width: 480px) {
-  .barcode-frontpage {
-    display: block; /* Viser kun i mobilversionen */
-    background-color: rgba(255, 255, 255, 0.4); /* White w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 43.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 100%;
-    padding: 5px;
-    text-align: center;  
-  }
+    .nf_info {
+        width: 100%;
+    }
+    .neye_fond_footer img {
+        width: 90%;
+    }
 }
-  }
+
+@media (max-width: 480px) {
+    .product_boxes {
+      flex-basis: calc(100% - 20px);
+      max-width: calc(100% - 20px);
+      min-width: 280px;
+    }
+    .barcode-frontpage {
+        display: block; /* Viser kun i mobilversionen */
+        background-color: rgba(255, 255, 255, 0.4); /* White w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        top: 43.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 100%;
+        padding: 5px;
+        text-align: center;  
+        }
+        .neye_fond_footer img {
+            width: 100%;
+        }
+        .intro-text {
+            top: 25%;
+        }
+}
