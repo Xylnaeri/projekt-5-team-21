@@ -98,7 +98,7 @@
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -127,7 +127,7 @@
 
 .summer{
     width: 100%;
-    max-height: 510px;
+    max-height: 520px;
     display: block;
     object-fit: cover;
     filter: blur(5px);
@@ -145,7 +145,7 @@
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -429,7 +429,7 @@
         color: white;
         font-weight: bold;
         position: absolute;
-        top: 43.5%;
+        top: 39%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
@@ -441,6 +441,9 @@
             width: 100%;
         }
         .intro-text {
-            top: 25%;
+            top: 20%;
+        }
+        .neye_fond {
+            top: 49%;
         }
 }
