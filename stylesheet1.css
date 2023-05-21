@@ -24,8 +24,66 @@
     box-sizing: border-box;  
 }
 
+/* search function start */
+
+.header {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+.search-box {
+    position: fixed;
+    top: 2px;
+    right: 5px;
+    height: 60px;
+    background: white;
+    line-height: 40px;
+    padding: 10px;
+    border-radius: 60px;
+  }
+  
+
+.search-input {
+    background: white;
+    color: black;
+    outline: none;
+    border: none;
+    line-height: 40px;
+    width: 0px;
+    float: left;
+    font-size: 14px;
+    transition: 0.7s ease;
+    font-family: sans-serif;
+  }
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: white;
+    padding: 12px;
+    border-radius: 50%;
+    float: right;
+    color: black;
+    transition: 0.4s ease;
+  }
+
+.search-box:hover > .search-input,
+.search-input:focus {
+    width: 240px;
+    margin: 0px 8px;
+  }
+
+.search-box:hover > .search-btn,
+.search-input:focus + .search-btn {
+    background: #D3DEDF;
+  }
+/* search function end */
+
 /* header section start */
-.search{
+.neye_logo_search{
     text-align: center;
     }  
 
@@ -34,6 +92,7 @@
     font-size: 40px;
     padding: 10px;
     }
+
 
 .intro-text{
     color: white;
