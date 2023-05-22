@@ -14,11 +14,6 @@ body {
 }
 
 /* BOTTOM NAVIGATION */
-.nav_link2 {
-    text-decoration: none;
-    color: #383838;
-}
-
 .nav {
     position: fixed;
     bottom: 0;
@@ -28,7 +23,7 @@ body {
     background-color: #ffffff;
     display: flex;
     overflow-x: auto;
-    z-index: 10;
+    z-index: 999;
 }
 
 .nav_link {
@@ -41,6 +36,11 @@ body {
     white-space: nowrap;
     color: #383838;
     text-decoration: none;
+}
+
+.nav_link2 {
+    text-decoration: none;
+    color: #383838;
 }
 
 .nav_link2:hover {
@@ -56,9 +56,10 @@ body {
     display: none;
     background-color: #f9f9f9;
     min-width: 100%;
-    z-index: 999;
+    z-index: 99;
     top: 0px;
     left: 0;
+    height: 100vh !important;
 }
 
 .dropdown-menu a {
@@ -73,7 +74,7 @@ body {
     text-decoration: none;
     line-height: 22px;
     margin-bottom: 1px;
-  }
+}
 
 /*MENU*/
 .nav-menu1 {
@@ -220,6 +221,343 @@ input {
 .index-buttons {
     padding-top: 30px;
     padding-bottom: 50px;
+}
+
+/*SEARCH FUNCTION*/
+.header {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+.search-box {
+    position: fixed;
+    top: 2px;
+    right: 5px;
+    height: 60px;
+    background: white;
+    line-height: 40px;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+
+.search-input {
+    background: white;
+    color: black;
+    outline: none;
+    border: none;
+    line-height: 40px;
+    width: 0px;
+    float: left;
+    font-size: 14px;
+    transition: 0.7s ease;
+    font-family: sans-serif;
+}
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: white;
+    padding: 12px;
+    border-radius: 50%;
+    float: right;
+    color: black;
+    transition: 0.4s ease;
+}
+
+.search-box:hover>.search-input,
+.search-input:focus {
+    width: 240px;
+    margin: 0px 8px;
+}
+
+.search-box:hover>.search-btn,
+.search-input:focus+.search-btn {
+    background: #D3DEDF;
+}
+
+/*FRONTPAGE HEADER*/
+.neye_logo_search {
+    text-align: center;
+}
+
+.logo {
+    background-color: #ffffff;
+    font-size: 40px;
+    padding: 10px;
+}
+
+
+.intro-text {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro-text h1 {
+    padding: 10px;
+    font-size: 30px;
+    font-family: "miller-headline", serif;
+}
+
+.intro-text h2 {
+    padding: 10px;
+    font-size: 50px;
+    font-family: "miller-headline", serif;
+}
+
+.intro-text p {
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Arquitecta', sans-serif;
+}
+
+.summer {
+    width: 100%;
+    max-height: 520px;
+    display: block;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+.barcode {
+    overflow: hidden;
+}
+
+.barcode-frontpage {
+    display: none;
+}
+
+.neye_fond {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.neye_fond img {
+    margin-top: 20px;
+    width: 45px;
+    padding: 5px;
+}
+
+/*FRONTPAGE BRANDS*/
+.brands {
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+.brands h1 {
+    font-size: 40px;
+    margin-top: 15px;
+    font-family: "miller-headline", serif;
+}
+
+.brands_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #E7EDEE;
+}
+
+.brands_boxes {
+    background-color: white;
+    height: 100px;
+    width: 200px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.brands_boxes img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* brands for you section end */
+
+
+/* brand news section start */
+.brand_model {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.brand_model h2 {
+    font-family: 'Arquitecta', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.brand_model_img {
+    display: block;
+    background-color: pink;
+    object-fit: contain;
+}
+
+.product_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #E7EDEE;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.product_boxes {
+    flex-basis: calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product_box_img {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.product_box_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product_box_text {
+    padding: 5px;
+}
+
+.product_box_text h1 {
+    font-size: 20px;
+    font-family: 'Arquitecta', sans-serif;
+    margin: 0;
+}
+
+.product_box_text p {
+    font-size: 15px;
+    font-family: 'Arquitecta', sans-serif;
+    margin: 0;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.old_price p {
+    text-decoration: line-through;
+}
+
+.new_price p {
+    color: #ED6C77;
+}
+
+/*FRONTPAGE MEMBERSHIP*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 150px;
+    /* Tilføjer 20px padding til højre og venstre */
+}
+
+.brand_model2 {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.brand_model_img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/*FRONTPAGE NEYE-FONDEN*/
+.neye_fond_info {
+    background-color: #E7EDEE;
+    width: 100%;
+    height: 810px;
+    text-align: center;
+    font-family: 'Arquitecta', sans-serif;
+    margin-top: 30px;
+
+}
+
+.nf_fond_bow img {
+    height: 60px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.neye_fond_info h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.neye_fond_footer {
+    width: 100%;
+    height: 300px;
+    background-color: #E7EDEE;
+}
+
+.neye_fond_footer img {
+    width: 60%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.nf_info {
+    font-family: 'Arquitecta', sans-serif;
+    font-size: 20px;
+    padding: 25px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.black-button:hover {
+    background-color: white;
+    color: black;
+    border: black;
+    border-style: solid;
+    border-width: thin;
+    cursor: pointer;
 }
 
 /*PROFILE*/
@@ -447,11 +785,13 @@ input {
     overflow: hidden;
     font-family: 'Arquitecta';
 }
+
 .panel-title {
     font-weight: 600;
     padding-bottom: 5px;
     padding-top: 10px;
 }
+
 /*COPY LINK*/
 .copy-link {
     width: 60%;
@@ -460,12 +800,14 @@ input {
     color: #383838;
     font-family: 'Arquitecta', sans-serif;
 }
+
 .copy-link-wrapper {
     padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .copy-link-button {
     border: none;
     background-color: #99A1A7;
@@ -477,17 +819,21 @@ input {
     text-transform: uppercase;
     cursor: pointer;
 }
+
 .copy-link-button:hover {
     background-color: #000000;
     color: white;
 }
+
 .donate {
     text-decoration: underline;
 }
+
 .donate:hover {
     color: #9BBEBD;
     cursor: pointer;
 }
+
 /*POINT AKTIVITET*/
 .point-aktivitet-p {
     font-family: 'Arquitecta', sans-serif;
@@ -547,21 +893,139 @@ input {
         width: 66%;
     }
 }
-
+/*KVITTERING*/
+.kvittering-close {
+    padding-top: 10px;
+    text-align: right;
+}
+.kvittering-close:hover {
+    color: #dd3636;
+    cursor: pointer;
+}
+.kvittering-preview {
+    background-color: #ffffff;
+    font-family: 'Arquitecta', sans-serif;
+    margin: 5%;
+}
+.preview {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.kvittering-title, .kvittering-info {
+    text-align: center;
+}
+.kvittering-title {
+    font-family: 'Miller headline', serif;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.kvittering-info {
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+.kvittering-p {
+    font-family: 'Arquitecta', sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.kvittering-product1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.kvittering-product-wrapper {
+    display: flex;
+}
+.kvittering-product-box {
+    width: 150px;
+    height: 150px;
+}
+.kvittering-product-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.kvittering-product-text {
+    padding-left: 10px;
+    padding-top: 30px;
+}
+.product-title {
+    font-family: 'Miller headline', serif;
+    font-size: 25px;
+}
+.kvittering-price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.kvittering-price p {
+    padding-bottom: 10px;
+}
 /*MEDIA QUERY*/
 @media only screen and (max-width: 1280px) {
-    .copy-link-wrapper{
+    .copy-link-wrapper {
         flex-direction: column;
     }
-    .copy-link-button, .copy-link {
+
+    .copy-link-button,
+    .copy-link {
         width: 90%;
     }
 }
+
+@media (max-width: 1024px) {
+    .product_boxes {
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .product_flex {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .nf_info {
+        width: 80%;
+    }
+
+    .neye_fond_footer img {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .brand_model2 {
+        flex-basis: 100%;
+    }
+
+    .row {
+        padding: 0 30px;
+    }
+
+    .product_flex {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nf_info {
+        width: 100%;
+    }
+
+    .neye_fond_footer img {
+        width: 90%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+
     /*NAV*/
     .dropdown-menu a {
         padding: 16px;
     }
+
     /*PROFILE*/
     .profileheader img {
         display: none;
@@ -632,7 +1096,56 @@ input {
         font-size: 15px;
         padding: 10px;
     }
-    .panel, .accordion{
+
+    .panel,
+    .accordion {
         width: 85%;
+    }
+    .kvittering-p {
+        padding-bottom: 20px;
+    }
+    .kvittering-product-box {
+        height: 80px;
+        width: 80px;
+    }
+    .kvittering-product-text {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product_boxes {
+        flex-basis: calc(100% - 20px);
+        max-width: calc(100% - 20px);
+        min-width: 280px;
+    }
+
+    .barcode-frontpage {
+        display: block;
+        /* Viser kun i mobilversionen */
+        background-color: rgba(255, 255, 255, 0.4);
+        /* White w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .neye_fond_footer img {
+        width: 100%;
+    }
+
+    .intro-text {
+        top: 15%;
+    }
+
+    .neye_fond {
+        top: 35%;
     }
 }

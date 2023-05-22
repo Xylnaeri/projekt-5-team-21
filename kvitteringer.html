@@ -6,44 +6,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEYE Kundeklub | Bliv en del af Klub NEYE og faa fordele</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet2.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="js/menu.js" defer></script>
 </head>
 
-<body>
-    <div class="kvitteringer">
-        <h1>Kvitteringer</h1>
-        <p>Se dine tidligere køb her</p>
+<body class="profile-body">
+    <nav>
+        <ul class="nav">
+            <li class="nav_link">
+                <a href="forside.html" class="nav_link2">
+                    <i class="material-symbols-outlined">home</i>
+                </a>
+            </li>
+            <li class="nav_link nav_link-active">
+                <a href="#" class="nav_link2">
+                    <i class="material-symbols-outlined">favorite</i>
+                </a>
+            </li>
+            <li class="nav_link">
+                <a href="profil.html" class="nav_link2">
+                    <i class="material-symbols-outlined">person</i>
+                </a>
+            </li>
+            <li class="nav_link">
+                <a href="#" class="nav_link2">
+                    <i class="material-symbols-outlined">shopping_bag</i>
+                </a>
+            </li>
+            <li class="nav_link" id="menu_icon">
+                <a href="#" class="nav_link2">
+                    <i class="material-symbols-outlined">menu</i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="dropdown-menu">
+        <ul>
+            <li class="nav-menu1"><a href="#">dame</a></li>
+            <li class="nav-menu1"><a href="#">herre</a></li>
+            <li class="nav-menu1"><a href="#">born</a></li>
+            <li class="nav-menu1"><a href="#">kufferter</a></li>
+            <li class="nav-menu1"><a href="#">outdoor</a></li>
+            <li class="nav-menu1"><a href="#">bolig</a></li>
+            <li class="nav-menu1"><a href="#">brands</a></li>
+            <li class="nav-menu1"><a href="#">tilbud</a></li>
+            <li class="nav-menu1"><a href="#">inspiration</a></li>
+            <li class="nav-menu2"><a href="#">neye-fonden</a></li>
+            <li class="nav-menu2"><a href="#">butikker</a></li>
+            <li class="nav-menu2"><a href="#">kundeservice</a></li>
+            <li class="nav-menu2"><a href="profil.html">min profil</a></li>
+            <li class="nav-menu2"><a href="index.html">log ud</a></li>
+        </ul>
     </div>
-    <div class="kvittering">
-        <h2>10. januar 2023</h2>
-        <p>NEYE Rosengårdscenteret</p>
-        <div class="k_pris">
-            <p>1000 kr.</p>
+    <header class="profileheader">
+        <img class="profileheader" src="img/imgnew/purple_kuffert.jpg">
+        <div class="profileheader-text">Kvitteringer
+            <p class="kvittering-p">Se dine tidligere køb her</p>
         </div>
-    </div>
-    <div class="kvittering">
-        <h2>10. januar 2023</h2>
-        <p>NEYE Rosengårdscenteret</p>
-        <div class="k_pris">
-            <p>1000 kr.</p>
+        <a href="forside.html">
+            <div class="icon-back top-left">
+                <i class="material-symbols-outlined">arrow_back_ios_new</i>
+            </div>
+        </a>
+    </header>
+    <main>
+        <div class="point-aktivitet">
+            <div class="point-box">
+                <div class="point-info">
+                    <p>10. januar 2023</p>
+                    <p class="point-info-place">NEYE Rosengaardcenteret</p>
+                </div>
+                <div class="point-walue">
+                    <p>756,94,-</p>
+                </div>
+            </div>
+            <div class="point-box">
+                <div class="point-info">
+                    <p>22. december 2022</p>
+                    <p class="point-info-place">NEYE Rosengaardcenteret</p>
+                </div>
+                <div class="point-walue">
+                    <p>2448,-</p>
+                </div>
+            </div>
+            <div class="point-box">
+                <div class="point-info">
+                    <p>17. marts 2022</p>
+                    <p class="point-info-place">NEYE Rosengaardcenteret</p>
+                </div>
+                <div class="point-walue">
+                    <p>295,60,-</p>
+                </div>
+            </div>
+            <div class="point-box">
+                <div class="point-info">
+                    <p>20. december 2021</p>
+                    <p class="point-info-place">NEYE Vestergade</p>
+                </div>
+                <div class="point-walue">
+                    <p>1837,54,-</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="kvittering">
-        <h2>10. januar 2023</h2>
-        <p>NEYE Rosengårdscenteret</p>
-        <div class="k_pris">
-            <p>1000 kr.</p>
-        </div>
-    </div>
-    <div class="kvittering">
-        <h2>10. januar 2023</h2>
-        <p>NEYE Rosengårdscenteret</p>
-        <div class="k_pris">
-            <p>1000 kr.</p>
-        </div>
-    </div>
+        <div class="kvittering-preview">
+            <div class="preview" id="preview1" data-target="p-1">
+                <i class="material-symbols-outlined kvittering-close">close</i>
+                <h3 class="kvittering-title">10. januar 2023</h3>
+                <h3 class="kvittering-title">NEYE</h3>
+                <p class="kvittering-info">NEYE rosengårdcenteret
+                    <br>Ørbækvej 75<br>Shop 3<br>5220 Odense
+                </p>
+                <div>
+                    <div class="kvittering-product1">
+                        <div class="kvittering-product-wrapper">
+                            <div class="kvittering-product-box">
+                                <img src="img/shopper_iris.jpg" alt="again shopper iris taske">
+                            </div>
+                            <div class="kvittering-product-text">
+                                <p class="product-title">Again</p>
+                                <p>Shopper iris</p>
+                            </div>
+                        </div>
+                        <p>542,00</p>
+                    </div>
+                    <div class="kvittering-product1">
+                        <div class="kvittering-product-wrapper">
+                            <div class="kvittering-product-box">
+                                <img src="img/timeless_pung.jpg" alt="again shopper iris taske">
+                            </div>
+                            <div class="kvittering-product-text">
+                                <p class="product-title">Tommy Hilfiger</p>
+                                <p>Pung Timeless</p>
+                            </div>
+                        </div>
+                        <p>542,00</p>
+                    </div>
+                    <hr>
+                    <div class="kvittering-price">
+                        <p>I ALT INKL. MOMS</p>
+                        <p>756,94,-</p>
+                    </div>
+                    <p class="kvittering-info">Tak for besøget!</p>
+                </div>
+            </div>
+            
+    </main>
 </body>
 
 </html>

@@ -6,7 +6,6 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
 
-    // Rotate the arrow icon
     let arrowIcon = this.querySelector(".accordion-arrow");
     arrowIcon.classList.toggle("rotate");
 
