@@ -940,8 +940,8 @@ input {
     display: flex;
 }
 .kvittering-product-box {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 .kvittering-product-box img {
     width: 100%;
@@ -955,7 +955,7 @@ input {
 }
 .product-title {
     font-family: 'Miller headline', serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 .kvittering-price {
     display: flex;
