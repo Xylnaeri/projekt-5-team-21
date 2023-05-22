@@ -11,26 +11,30 @@ menuIcon.addEventListener("click", function () {
 
 document.addEventListener("DOMContentLoaded", function() {
     const pointBoxes = document.querySelectorAll(".point-box");
+    const previews = document.querySelectorAll(".preview");
   
-    pointBoxes.forEach(function(pointBox, index) {
+    for (let i = 0; i < pointBoxes.length; i++) {
+      const pointBox = pointBoxes[i];
+      const preview = previews[i];
+  
       pointBox.addEventListener("click", function(event) {
         event.stopPropagation();
   
         const overlay = document.createElement("div");
         overlay.classList.add("overlay");
   
-        const preview = document.querySelector(`#preview${index + 1}`).cloneNode(true);
-        preview.classList.add("preview-overlay");
+        const previewClone = preview.cloneNode(true);
+        previewClone.classList.add("preview-overlay");
   
-        const closeBtn = preview.querySelector(".kvittering-close");
+        const closeBtn = previewClone.querySelector(".kvittering-close");
         closeBtn.addEventListener("click", function() {
           overlay.remove();
         });
   
-        overlay.appendChild(preview);
+        overlay.appendChild(previewClone);
         document.body.appendChild(overlay);
       });
-    });
+    }
   
     // Lyt efter klik uden for overlayet
     document.addEventListener("click", function(event) {
@@ -42,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   });
-  
   
 
   
