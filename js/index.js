@@ -26,5 +26,5 @@ function submitForm(event) {
     return false;
   }
 
-  window.location.href = "profil.html"; 
+  window.location.href = "forside.html"; 
 };

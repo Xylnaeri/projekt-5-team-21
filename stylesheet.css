@@ -333,6 +333,7 @@ input {
 
 .barcode {
     overflow: hidden;
+    display: flex;
 }
 
 .barcode-frontpage {
@@ -509,7 +510,7 @@ input {
     text-align: center;
     font-family: 'Arquitecta', sans-serif;
     margin-top: 30px;
-
+    margin-bottom: 50px;
 }
 
 .nf_fond_bow img {
@@ -899,7 +900,7 @@ input {
     text-align: right;
 }
 .kvittering-close:hover {
-    color: #dd3636;
+    color: #9BBEBD;
     cursor: pointer;
 }
 .kvittering-preview {
