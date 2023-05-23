@@ -244,7 +244,6 @@ input {
     border-radius: 60px;
 }
 
-
 .search-input {
     background: white;
     color: black;
@@ -293,7 +292,6 @@ input {
     padding: 10px;
 }
 
-
 .intro-text {
     color: white;
     font-weight: bold;
@@ -323,11 +321,13 @@ input {
     padding: 10px;
     font-size: 20px;
     font-family: 'Arquitecta', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
 }
 
 .summer {
     width: 100%;
-    max-height: 520px;
+    max-height: 540px;
     display: block;
     object-fit: cover;
     filter: blur(5px);
@@ -344,7 +344,7 @@ input {
 
 .neye_fond {
     color: white;
-    font-weight: bold;
+    font-weight: 300;
     position: absolute;
     top: 33%;
     left: 50%;
