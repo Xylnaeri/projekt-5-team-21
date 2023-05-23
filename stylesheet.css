@@ -60,13 +60,15 @@ body {
     top: 0px;
     left: 0;
     height: 100vh !important;
+    overflow-y: scroll;
+    padding-bottom: 100px;
 }
 
 .dropdown-menu a {
     color: #333;
     text-decoration: none;
     display: block;
-    padding: 2%;
+    padding: 25px;
     font-family: 'Arquitecta', sans-serif;
     font-weight: 450;
     font-size: 20px;
@@ -560,7 +562,38 @@ input {
     border-width: thin;
     cursor: pointer;
 }
+/*TOOLTIP*/
+.neye_fond1 img{
+    width: 40px;
+    padding: 5px;
+}
+.neye_fond1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.tooltip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tooltiptext {
+    font-family: 'Arquitecta', sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 5px;
+    color: #202020;
+}
 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #D4DBE0;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 /*PROFILE*/
 .profile-body {
     background-color: #F6F6F6;
@@ -701,7 +734,7 @@ input {
     font-family: 'Arquitecta', sans-serif;
     font-weight: 700;
     font-size: 100px;
-    color: #e75b67;
+    color: #835582;
 }
 
 .point-p {
@@ -844,10 +877,10 @@ input {
 }
 
 .point-aktivitet {
-    padding-top: 8%;
+    padding-top: 5%;
     margin: 0 auto;
     width: 50%;
-    padding-bottom: 10%;
+    padding-bottom: 1%;
 }
 
 .point-box {
@@ -861,6 +894,9 @@ input {
     font-weight: 400;
     font-size: 20px;
     color: #383838;
+}
+.divider {
+    height: 120px;
 }
 
 .point-info p {
@@ -882,7 +918,7 @@ input {
     width: 0;
     height: 10px;
     border-radius: 5px;
-    background-color: #e75b67;
+    background-color: #9B82AA;
 }
 
 #html-bar {
@@ -1062,23 +1098,10 @@ input {
 
     /*NAV*/
     .dropdown-menu a {
-        padding: 16px;
+        padding: 15px;
     }
 
     /*PROFILE*/
-    .profileheader img {
-        display: none;
-    }
-
-    .profileheader {
-        color: #383838;
-    }
-
-    .profileheader-text {
-        font-size: 40px;
-        padding-top: 150px;
-    }
-
     .profile-buttons1,
     .profile-buttons2 {
         width: 40%;
