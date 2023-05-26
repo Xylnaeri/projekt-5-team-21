@@ -1,9 +1,9 @@
 function myFunction() {
-    var copyText = document.getElementById("copyLink");
-    var copyButton = document.querySelector(".copy-link-button");
+    let copyText = document.getElementById("copyLink");
+    let copyButton = document.querySelector(".copy-link-button");
   
     copyText.select();
-    copyText.setSelectionRange(0, 99999);
+    copyText.setSelectionRange(0, 2);
   
     navigator.clipboard.writeText(copyText.value);
   

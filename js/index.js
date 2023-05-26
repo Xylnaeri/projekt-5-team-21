@@ -23,8 +23,8 @@ function submitForm(event) {
     for (let i = 0; i < invalidInputs.length; i++) {
       invalidInputs[i].style.border = "1px solid #ED6C77";
     }
-    return false;
   }
-
-  window.location.href = "forside.html"; 
+  else {
+    window.location.href = "forside.html";
+  }
 };
