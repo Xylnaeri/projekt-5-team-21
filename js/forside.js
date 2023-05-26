@@ -8,13 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
     function performSearch() {
       let searchTerm = searchInput.value.toLowerCase();
   
-      // Kontroller om søgetermen er gyldig ved at tjekke om den findes i arrayet
-      if (validSearchTerms.includes(searchTerm)) {
-        // Åbn en side baseret på søgetermen
-        window.location.href = searchTerm + ".html";
-      } else {
-        // Vis en fejlmeddelelse eller tag ingen handling
-        console.log("Ugyldig søgeterm");
+      for (let i = 0; i < validSearchTerms.length; i++) {
+        if (validSearchTerms[i] === searchTerm) {
+          // Åbn en side baseret på søgetermen
+          window.location.href = searchTerm + ".html";
+          return; // Exit the loop and the function
+        }
       }
   
       // Nulstil søgefeltet

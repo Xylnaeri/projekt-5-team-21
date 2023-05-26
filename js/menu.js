@@ -14,8 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const previews = document.querySelectorAll(".preview");
   
     for (let i = 0; i < pointBoxes.length; i++) {
-      const pointBox = pointBoxes[i];
-      const preview = previews[i];
+      if (i < pointBoxes.length) {
+        const pointBox = pointBoxes[i];
+        const preview = previews[i];}
   
       pointBox.addEventListener("click", function(event) {
         event.stopPropagation();
