@@ -1,7 +1,10 @@
 const menuIcon = document.getElementById("menu_icon");
 const dropdownMenu = document.querySelector(".dropdown-menu");
 
+/*Eventlistener på click event på menu ikonet*/
 menuIcon.addEventListener("click", function () {
+  /*hvis CSS styling på dropdownmenu er sat til "block" vil den ændres til "none" og hvis den ikke er sat
+  til "block" vil den så sættes til "block"*/
     if (dropdownMenu.style.display === "block") {
         dropdownMenu.style.display = "none";
     } else {
