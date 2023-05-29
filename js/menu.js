@@ -12,16 +12,18 @@ menuIcon.addEventListener("click", function () {
     }
 });
 
+//indlæser DOM
 document.addEventListener("DOMContentLoaded", function() {
     const pointBoxes = document.querySelectorAll(".point-box");
     const previews = document.querySelectorAll(".preview");
-  
+ 
+//opretter for-løkke
     for (let i = 0; i < pointBoxes.length; i++) {
-      if (i < pointBoxes.length) {
-        const pointBox = pointBoxes[i];
-        const preview = previews[i];}
   
-      pointBox.addEventListener("click", function(event) {
+        const pointBox = pointBoxes[i];
+        const preview = previews[i];
+  
+        pointBox.addEventListener("click", function(event) {
         event.stopPropagation();
   
         const overlay = document.createElement("div");
